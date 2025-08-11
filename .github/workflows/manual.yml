@@ -2,7 +2,16 @@ name: Manual Deployment
 
 on:
   workflow_dispatch:
-
+    inputs:
+      enviroment:
+        description: "choose enviroment"
+        required: true
+        default: "staging"
+        type: choice
+        options:
+          - staging
+          - production
+        
 jobs:
   deploy:
     runs-on: ubuntu-latest
