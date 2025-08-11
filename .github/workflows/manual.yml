@@ -1,6 +1,8 @@
+name: Manual Deployment
+
 on:
   workflow_dispatch:
-  
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
