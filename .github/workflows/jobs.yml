@@ -23,6 +23,6 @@ jobs:
     runs-on: ubuntu-latest
     needs: [job_2,job_3]
     steps:
-    - run: "echo job ${{github.job}]"
+    - run: "echo job ${{github.job}}"
     
   
