@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Run a deployment script
-      run: ./deploy/sh
+      run: ./deploy/.sh
     - name: Cleanup on failure
       run: echo "Deployment succeeded"
       if: success()
