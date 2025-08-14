@@ -4,7 +4,7 @@ jobs:
   expressions:
     runs-on: ubuntu-latest
     steps:
-    - name: Run a doployment script
+    - name: Run a deployment script
       run: ./deploy/sh
     - name: Cleanup on failure
       run: echo "Deployment succeeded"
