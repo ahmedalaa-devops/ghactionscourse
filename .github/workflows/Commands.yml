@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Set API key
-      run: echo "API_KEY=12345" << $github_ENV
+      run: echo "API_KEY=12345" >> $github_ENV
     - name: Use API key
       run: echo "Useing API key $API_KEY"
   
