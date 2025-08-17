@@ -7,7 +7,7 @@ jobs:
     - run: |
         deprecated=true
         if {{ deprecated }}; then
-          echo "::warning::Deprecated fanction found" 
+          echo "::warning::Deprecated function found" 
         fi
         
     
